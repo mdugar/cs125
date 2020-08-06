@@ -11,6 +11,9 @@ Implementation of some interesting algorithms accounting for runtime/complexity 
 #### ```arrays```
 1D & 2D Array Manipulation.
 
+#### ```exceptions```
+Quick exercises with examples on how to handle the three types of exceptions (Checked, Unchecked, Error) in Java.
+
 #### ```functions```
 Functions made to implement certain algorithms, along with an intro to method overloading.
 
@@ -79,3 +82,6 @@ Completed implementation of a method for the ```BinaryTree``` class which lets t
 
 #### ```Exercise 9: Insertion Sort```
 Completed implementation of an ```InsertionSorter``` class which returns the number of swaps needed to perform a proper insertion sort on an array.
+
+#### ```Exercise 10: Working With Exceptions```
+Completed implementation of a ```Faulter``` class whose constructor takes a single String argument and only method ```fault()``` returns an Exception.
