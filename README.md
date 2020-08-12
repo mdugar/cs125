@@ -85,3 +85,6 @@ Completed implementation of an ```InsertionSorter``` class which returns the num
 
 #### ```Exercise 10: Working With Exceptions```
 Completed implementation of a ```Faulter``` class whose constructor takes a single String argument and only method ```fault()``` returns an Exception.
+
+#### ```Exercise 11: Maps and Trees```
+Created a method called ```Map<Object,Integer> valueCount()``` that returns a Map mapping each object in the tree to the number of times that it appears.
