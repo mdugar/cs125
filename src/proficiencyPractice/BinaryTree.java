@@ -5,16 +5,16 @@ import java.util.Random;
 public class BinaryTree {
     private static Random random = new Random();
 
-    private class Node {
-        private Object value;
-        private Node right;
-        private Node left;
+    protected class Node {
+        protected Object value;
+        protected Node right;
+        protected Node left;
         Node(Object setValue) {
             value = setValue;
         }
     }
 
-    private Node root;
+    protected Node root;
 
     BinaryTree(Object[] values) {
         for (Object value : values) {
