@@ -1,9 +1,9 @@
-package proficiencyPractice;
+/*package proficiencyPractice;
 
 import java.util.Map;
 import java.util.HashMap;
 
-public class YourBinaryTree extends BinaryTree {
+public class YourBinaryTree {
 
     private void traverse_tree(Node root, Map<Object, Integer> objectCountMap) {
         if(root == null) {
@@ -22,4 +22,4 @@ public class YourBinaryTree extends BinaryTree {
         System.out.println(objectCountMap);
         return objectCountMap;
     }
-}
+}*/

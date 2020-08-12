@@ -2,6 +2,7 @@ package ClassExercises.treesAndRecursion;
 
 import java.util.Random;
 
+
 public class BinaryTree {
     private static Random random = new Random();
 
@@ -128,5 +129,22 @@ public class BinaryTree {
         }
 
         return false;
+    }
+
+    public int countLessThan(Comparable value) {
+        if (value == null) {
+            throw new IllegalArgumentException("Value cannot be null.");
+        }
+        return countLessThan(value, root);
+    }
+
+    private int countLessThan(Comparable value, Node root) {
+        if (root == null) {
+            return 0;
+        }
+        if (root.value.compareTo(value) < 0) {
+            return 1;
+        }
+        return countLessThan(value, root.left) + countLessThan(value, root.right);
     }
 }
