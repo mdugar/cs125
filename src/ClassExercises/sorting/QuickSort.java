@@ -3,9 +3,9 @@ package ClassExercises.sorting;
 import java.util.Arrays;
 
 public class QuickSort {
-    public static int partition(int[] inputArray, int start, int end) {
+    public static void partition(int[] inputArray, int start, int end) {
         if (end <= start + 1) {
-            return 0;
+            return;
         }
         int pivot = start;
         int pivotVal = inputArray[start];
@@ -19,24 +19,17 @@ public class QuickSort {
         }
         inputArray[start] = inputArray[pivot];
         inputArray[pivot] = pivotVal;
-        return pivot;
     }
 
     public static void quickSort(int[] arr, int start, int end){
-        int partition = partition(arr, start, end);
+        partition(arr, start, end);
 
-        if (partition - 1 > start) {
-            quickSort(arr, start, partition - 1);
-        }
-
-        if (partition + 1 > end) {
-            quickSort(arr, partition + 1, end);
-        }
+        quickSort(arr, start, end - 1);
+        quickSort(arr, start + 1, end);
     }
 
     public static void main(String[] args) {
-        int[] testArray = new int[] {8, 5, 7, 3, 4, 11, 6, -1};
-        //System.out.println(partition(testArray, 0, testArray.length));
+        int[] testArray = new int[] {8, 5, 7, 3, 4, 11, 6, -1}; // Unstable Sort
         quickSort(testArray, 0, testArray.length);
         System.out.println(Arrays.toString(testArray));
     }
